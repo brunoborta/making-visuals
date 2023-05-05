@@ -1,9 +1,11 @@
-import Canvas from "./components/Canvas"
+import Unit2 from "./components/Unit2"
+import Unit3 from "./components/Unit3"
 
 function App() {
   return (
     <>
-      <Canvas></Canvas>
+      {/* <Unit2></Unit2> */}
+      <Unit3 />
     </>
   )
 }
