@@ -14,14 +14,13 @@ function Canvas({children}) {
         const context = canvasRef.current.getContext('2d');
         context.fillStyle = 'black';
 
-        //
-        // context.translate(x, y);
-
-        context.rotate(0.3);
-
+        
+        // context.rotate(0.3);
+        
         context.beginPath();
-        context.rect(0, 0, w, h);
+        context.rect(w, h, w, h);
         context.fill();
+        context.translate(x, y);
 
     }, []);
     return <canvas width={width} height={height} ref={canvasRef}>{children}</canvas>;
